@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KS Professional Network (KSPN) | Connecting Student Talent & Local Businesses</title>
+    <meta name="description" content="KSPN acts as a zero-cost vetting intermediary connecting Pearland high school students with local businesses for internships, projects, and part-time jobs.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background visual mesh and ambient glow grids inspired by helixearth.com -->
+    <div class="bg-glow-container" aria-hidden="true">
+        <div class="bg-glow bg-glow-1"></div>
+        <div class="bg-glow bg-glow-2"></div>
+        <div class="bg-glow bg-glow-3"></div>
+        <div class="grid-overlay"></div>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header class="main-header" id="main-header">
+        <div class="header-container">
+            <a href="#home" class="logo-link" id="logo-link" aria-label="KSPN Home">
+                <div class="logo-icon-wrapper">
+                    <!-- Clean geometric logo symbolizing networking and growth -->
+                    <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#00f2fe" />
+                                <stop offset="100%" stop-color="#10b981" />
+                            </linearGradient>
+                        </defs>
+                        <circle cx="50" cy="50" r="40" stroke="url(#logo-grad)" stroke-width="8" fill="none" opacity="0.15"/>
+                        <path d="M30,50 L45,65 L70,35" stroke="url(#logo-grad)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                        <circle cx="30" cy="50" r="5" fill="#00f2fe" />
+                        <circle cx="70" cy="35" r="5" fill="#10b981" />
+                    </svg>
+                </div>
+                <span class="logo-text">KS<span class="accent-text">PN</span></span>
+            </a>
+
+            <!-- Desktop Nav Menu -->
+            <nav class="desktop-nav" id="desktop-nav" aria-label="Main Navigation">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active" id="nav-link-home">Home</a></li>
+                    <li><a href="#hire" class="nav-link" id="nav-link-hire">Hire Talent</a></li>
+                    <li><a href="#support" class="nav-link" id="nav-link-support">Support Us</a></li>
+                    <li><a href="#about" class="nav-link" id="nav-link-about">About Us</a></li>
+                    <li><a href="#students" class="nav-link" id="nav-link-students">Student Hub</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-cta">
+                <a href="#hire" class="btn btn-primary btn-header" id="header-cta-btn">Hire Talent</a>
+                <!-- Mobile Navigation Toggle -->
+                <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle Menu" aria-expanded="false">
+                    <span class="burger-bar bar-1"></span>
+                    <span class="burger-bar bar-2"></span>
+                    <span class="burger-bar bar-3"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-drawer" id="mobile-nav-drawer" aria-hidden="true">
+        <nav class="mobile-nav" aria-label="Mobile Navigation">
+            <ul class="mobile-nav-list">
+                <li><a href="#home" class="mobile-nav-link" id="mobile-nav-link-home">Home</a></li>
+                <li><a href="#hire" class="mobile-nav-link" id="mobile-nav-link-hire">Hire Talent</a></li>
+                <li><a href="#support" class="mobile-nav-link" id="mobile-nav-link-support">Support Us</a></li>
+                <li><a href="#about" class="mobile-nav-link" id="mobile-nav-link-about">About Us</a></li>
+                <li><a href="#students" class="mobile-nav-link" id="mobile-nav-link-students">Student Hub</a></li>
+                <li><a href="#hire" class="mobile-nav-link mobile-nav-cta" id="mobile-nav-link-cta">Partner With Us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Main Content Views Wrapper -->
+    <main class="main-content" id="main-content">
+
+        <!-- ================= HOME VIEW ================= -->
+        <section id="home" class="view-section active" aria-labelledby="home-hero-title">
+            <!-- Hero Banner -->
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="badge-accent">Summer 2026 B2B Sprint</div>
+                    <h1 id="home-hero-title" class="hero-title">Bridging Driven Student Talent and Local Pearland Businesses</h1>
+                    <p class="hero-subtitle">KSPN acts as a zero-cost vetting intermediary. We connect local companies with highly motivated high school talent to handle specialized projects, while students acquire crucial real-world experience.</p>
+                    <div class="hero-actions">
+                        <a href="#hire" class="btn btn-primary btn-large" id="hero-btn-hire">Hire Local Talent</a>
+                        <a href="#about" class="btn btn-secondary btn-large" id="hero-btn-about">Meet Our Team</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="abstract-network-widget">
+                        <!-- Clean technology vector overlay representing systems and connections -->
+                        <svg class="network-svg" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <radialGradient id="widget-glow" cx="50%" cy="50%" r="50%">
+                                    <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.2"/>
+                                    <stop offset="100%" stop-color="#080c14" stop-opacity="0"/>
+                                </radialGradient>
+                            </defs>
+                            <circle cx="200" cy="200" r="160" fill="url(#widget-glow)" />
+                            
+                            <!-- Orbiting Rings -->
+                            <circle cx="200" cy="200" r="120" stroke="rgba(0, 242, 254, 0.15)" stroke-width="2" fill="none" stroke-dasharray="10 5" class="orbit-1"/>
+                            <circle cx="200" cy="200" r="80" stroke="rgba(16, 185, 129, 0.15)" stroke-width="2" fill="none" stroke-dasharray="5 5" class="orbit-2"/>
+                            
+                            <!-- Connected Nodes -->
+                            <line x1="120" y1="120" x2="200" y2="80" stroke="rgba(255,255,255,0.15)" stroke-width="2" />
+                            <line x1="200" y1="80" x2="280" y2="120" stroke="rgba(255,255,255,0.15)" stroke-width="2" />
+                            <line x1="280" y1="120" x2="280" y2="280" stroke="rgba(255,255,255,0.15)" stroke-width="2" />
+                            <line x1="280" y1="280" x2="200" y2="320" stroke="rgba(255,255,255,0.15)" stroke-width="2" />
+                            <line x1="200" y1="320" x2="120" y2="280" stroke="rgba(255,255,255,0.15)" stroke-width="2" />
+                            <line x1="120" y1="280" x2="120" y2="120" stroke="rgba(255,255,255,0.15)" stroke-width="2" />
+                            <line x1="200" y1="80" x2="200" y2="320" stroke="rgba(255,255,255,0.1)" stroke-width="1" />
+                            <line x1="120" y1="200" x2="280" y2="200" stroke="rgba(255,255,255,0.1)" stroke-width="1" />
+
+                            <!-- Main Node Icons -->
+                            <g class="node node-1">
+                                <circle cx="200" cy="80" r="16" fill="#080c14" stroke="#00f2fe" stroke-width="3" />
+                                <text x="200" y="85" text-anchor="middle" fill="#00f2fe" font-size="12" font-family="'Outfit', sans-serif" font-weight="bold">B2B</text>
+                            </g>
+                            <g class="node node-2">
+                                <circle cx="280" cy="120" r="12" fill="#080c14" stroke="#10b981" stroke-width="2" />
+                                <circle cx="280" cy="120" r="4" fill="#10b981" />
+                            </g>
+                            <g class="node node-3">
+                                <circle cx="280" cy="280" r="16" fill="#080c14" stroke="#00f2fe" stroke-width="3" />
+                                <text x="280" y="285" text-anchor="middle" fill="#00f2fe" font-size="12" font-family="'Outfit', sans-serif" font-weight="bold">KS</text>
+                            </g>
+                            <g class="node node-4">
+                                <circle cx="200" cy="320" r="12" fill="#080c14" stroke="#10b981" stroke-width="2" />
+                                <circle cx="200" cy="320" r="4" fill="#10b981" />
+                            </g>
+                            <g class="node node-5">
+                                <circle cx="120" cy="280" r="16" fill="#080c14" stroke="#00f2fe" stroke-width="3" />
+                                <text x="120" y="285" text-anchor="middle" fill="#00f2fe" font-size="11" font-family="'Outfit', sans-serif" font-weight="bold">TAL</text>
+                            </g>
+                            <g class="node node-6">
+                                <circle cx="120" cy="120" r="12" fill="#080c14" stroke="#10b981" stroke-width="2" />
+                                <circle cx="120" cy="120" r="4" fill="#10b981" />
+                            </g>
+                            
+                            <!-- Center Central Hub -->
+                            <circle cx="200" cy="200" r="28" fill="#080c14" stroke="url(#logo-grad)" stroke-width="4" class="pulse-ring-slow" />
+                            <circle cx="200" cy="200" r="22" fill="rgba(0,242,254,0.1)" />
+                            <path d="M192,205 L198,211 L209,195" stroke="#00f2fe" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Value Proposition & Trust Section -->
+            <div class="section-container value-prop-section">
+                <div class="section-header-center">
+                    <span class="section-tagline">Why KSPN?</span>
+                    <h2>A Zero-Cost Vetting Intermediary</h2>
+                    <p class="section-desc">We eliminate the friction, risks, and administrative overhead of traditional student hiring. Pearland businesses gain tailored capacity for key projects, while driven students receive real-world work opportunities.</p>
+                </div>
+
+                <div class="grid-three-col value-cards-grid">
+                    <div class="glass-card value-card">
+                        <div class="card-icon-wrapper color-teal">
+                            <!-- Shield Trust Icon -->
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="card-icon"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        </div>
+                        <h3>Rigorous Student Vetting</h3>
+                        <p>We do not just pass along resumes. Our internal Student Development team pre-screens and interviews all applicants, matching only the top 10% of driven high school candidates with your business.</p>
+                    </div>
+                    <div class="glass-card value-card">
+                        <div class="card-icon-wrapper color-green">
+                            <!-- Dollar/Zero Cost Icon -->
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="card-icon"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                        </div>
+                        <h3>Strictly Zero-Cost</h3>
+                        <p>We are a community-driven club initiative funded by sponsorships. Our connection and consultation services are 100% free for Pearland businesses. No hidden fees or placements cuts.</p>
+                    </div>
+                    <div class="glass-card value-card">
+                        <div class="card-icon-wrapper color-blue">
+                            <!-- Shield/Minimal Effort Icon -->
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="card-icon"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                        </div>
+                        <h3>Frictionless Management</h3>
+                        <p>A dedicated KSPN Account Manager stays aligned with your team. We check in regularly, provide feedback loops, and handle all student support issues to protect your valuable time.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- "How It Works" Journey Section -->
+            <div class="section-container how-it-works-section">
+                <div class="section-header-center">
+                    <span class="section-tagline">Step-by-step</span>
+                    <h2>Your Journey with KSPN</h2>
+                    <p class="section-desc">Partnering with us requires minimal time and zero commitments. Here is exactly what happens when you tap into our local high school talent network.</p>
+                </div>
+
+                <!-- Vertical/Horizontal Stepper -->
+                <div class="stepper-wrapper">
+                    <div class="stepper-track" aria-hidden="true"></div>
+                    
+                    <!-- Step 1 -->
+                    <div class="step-item">
+                        <div class="step-badge">1</div>
+                        <div class="step-content glass-card">
+                            <div class="step-icon-wrapper">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="step-icon"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>
+                            </div>
+                            <h3>The 30-Second Connect</h3>
+                            <p>Fill out our short interest form. It takes less than a minute and requires no immediate commitment. We just need to know who you are, what your industry is, and the best way to contact you.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="step-item">
+                        <div class="step-badge">2</div>
+                        <div class="step-content glass-card">
+                            <div class="step-icon-wrapper">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="step-icon"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                            </div>
+                            <h3>The Custom Consultation</h3>
+                            <p>Within 48 hours, a dedicated KSPN Account Manager reaches out. We'll work with you to understand your exact project needs—whether it's an ongoing intern, a social media designer, or a job shadow.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="step-item">
+                        <div class="step-badge">3</div>
+                        <div class="step-content glass-card">
+                            <div class="step-icon-wrapper">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="step-icon"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                            </div>
+                            <h3>The Talent Match</h3>
+                            <p>Sit back while we do the heavy lifting. We tap into our career clubs at Dawson and Shadow Creek High Schools, filter applications, review profiles, and select top pre-vetted candidates matching your parameters.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="step-item">
+                        <div class="step-badge">4</div>
+                        <div class="step-content glass-card">
+                            <div class="step-icon-wrapper">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="step-icon"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            </div>
+                            <h3>Placement & Support</h3>
+                            <p>We present the top resumes for your approval. You make the final hiring call. Once the student begins, your Account Manager provides structured progress checks to ensure the engagement is successful.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Flexible Placements Formats Section -->
+            <div class="section-container formats-section">
+                <div class="section-header-center">
+                    <span class="section-tagline">Tailored Formats</span>
+                    <h2>Flexible Support Structures</h2>
+                    <p class="section-desc">We facilitate various structural arrangements, allowing your business to structure the engagement around your specific projects and timeline.</p>
+                </div>
+
+                <div class="grid-three-col formats-grid">
+                    <div class="glass-card format-card">
+                        <h3>Project-Based Work</h3>
+                        <p>Perfect for discrete tasks like building a landing page, generating social media content calendars, or organizing inventory logs. Students work independently to hit defined project milestones.</p>
+                    </div>
+                    <div class="glass-card format-card">
+                        <h3>Structured Internships</h3>
+                        <p>Defined multi-week arrangements (summer or semester-based) that give students a comprehensive view of your company. Can be paid or unpaid depending on duties and hours.</p>
+                    </div>
+                    <div class="glass-card format-card">
+                        <h3>Part-Time Support</h3>
+                        <p>Ongoing support for operations, admin, customer support, or digital marketing. Tailored to align around high school schedules (after school, weekends, and holidays).</p>
+                    </div>
+                    <div class="glass-card format-card">
+                        <h3>Apprenticeships</h3>
+                        <p>Hands-on operational training where students master technical or vocational skills under your team's direct mentoring and oversight.</p>
+                    </div>
+                    <div class="glass-card format-card">
+                        <h3>Job Shadowing</h3>
+                        <p>Low-friction, short-term arrangements (usually 1-3 days) where students shadow your professionals to learn about career pathways and day-to-day operations.</p>
+                    </div>
+                    <div class="glass-card format-card">
+                        <h3>Volunteer Roles</h3>
+                        <p>Community-centered project roles for non-profits or community organizations, helping students build service hours while helping your operation grow.</p>
+                    </div>
+                </div>
+
+                <div class="cta-banner glass-card">
+                    <div class="cta-banner-content">
+                        <h3>Ready to tap into local Pearland talent?</h3>
+                        <p>Submit your basic contact info today, and we'll handle the rest.</p>
+                    </div>
+                    <a href="#hire" class="btn btn-primary" id="home-banner-cta">Submit Intake Form</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= HIRE TALENT VIEW ================= -->
+        <section id="hire" class="view-section" aria-labelledby="hire-title">
+            <div class="section-container hire-page-container">
+                <div class="grid-two-col hire-split-grid">
+                    <!-- Left Column: Guide -->
+                    <div class="hire-guide-content">
+                        <span class="section-tagline">Phase 1 Public Intake</span>
+                        <h2 id="hire-title">Add Your Business to the KSPN Summer Pipeline</h2>
+                        <p class="guide-lead">Submitting this form does not lock you into any contract. It simply alerts our student leadership that your business is open to exploring student talent options.</p>
+                        
+                        <div class="guide-steps">
+                            <div class="guide-step-row">
+                                <div class="guide-step-number">01</div>
+                                <div class="guide-step-text">
+                                    <h4>Frictionless Submission</h4>
+                                    <p>Fill out the basics on the right. We don't ask for job descriptions, hours, or pay structural details at this phase to save your time.</p>
+                                </div>
+                            </div>
+                            <div class="guide-step-row">
+                                <div class="guide-step-number">02</div>
+                                <div class="guide-step-text">
+                                    <h4>Personal Follow-Up</h4>
+                                    <p>A KSPN Account Manager will contact you via email within 48 hours to collect specific requirements (skills, project format, compensation format).</p>
+                                </div>
+                            </div>
+                            <div class="guide-step-row">
+                                <div class="guide-step-number">03</div>
+                                <div class="guide-step-text">
+                                    <h4>Candidate Sourcing</h4>
+                                    <p>Our directors present vetted resumes from Dawson & Shadow Creek High Schools, helping you fill the slot with zero friction.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Trust Badge -->
+                        <div class="trust-badge-footer glass-card">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="trust-badge-icon"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                            <p>Your details are protected. KSPN will never sell, lease, or share your contact info beyond our direct matching system.</p>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Intake Form -->
+                    <div class="intake-form-wrapper glass-card">
+                        <div class="form-header">
+                            <h3>Business Registration Form</h3>
+                            <p>Phase 1 Interest Submission</p>
+                        </div>
+                        <form id="kspn-intake-form" class="kspn-form" novalidate>
+                            <div class="form-group-row">
+                                <div class="form-group">
+                                    <label for="company-name">Company Name <span class="required">*</span></label>
+                                    <input type="text" id="company-name" name="companyName" placeholder="e.g. Pearland Digital Marketing" required>
+                                    <span class="error-msg" id="error-company-name">Please enter your company name</span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="company-industry">Industry <span class="required">*</span></label>
+                                    <input type="text" id="company-industry" name="companyIndustry" placeholder="e.g. Retail, Medical, Legal" required>
+                                    <span class="error-msg" id="error-company-industry">Please enter your industry</span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="company-address">Company Address <span class="required">*</span></label>
+                                <input type="text" id="company-address" name="companyAddress" placeholder="e.g. 1234 Broadway St, Pearland, TX" required>
+                                <span class="error-msg" id="error-company-address">Please enter your company address</span>
+                            </div>
+
+                            <div class="form-group-row">
+                                <div class="form-group">
+                                    <label for="contact-name">Primary Contact Name <span class="required">*</span></label>
+                                    <input type="text" id="contact-name" name="contactName" placeholder="e.g. Jane Doe" required>
+                                    <span class="error-msg" id="error-contact-name">Please enter contact name</span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="contact-title">Job Title <span class="required">*</span></label>
+                                    <input type="text" id="contact-title" name="contactTitle" placeholder="e.g. General Manager" required>
+                                    <span class="error-msg" id="error-contact-title">Please enter job title</span>
+                                </div>
+                            </div>
+
+                            <div class="form-group-row">
+                                <div class="form-group">
+                                    <label for="contact-email">Contact Email <span class="required">*</span></label>
+                                    <input type="email" id="contact-email" name="contactEmail" placeholder="e.g. jane@company.com" required>
+                                    <span class="error-msg" id="error-contact-email">Please enter a valid email address</span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="contact-phone">Contact Phone <span class="required">*</span></label>
+                                    <input type="tel" id="contact-phone" name="contactPhone" placeholder="e.g. (281) 555-0199" required>
+                                    <span class="error-msg" id="error-contact-phone">Please enter phone number</span>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-full-width" id="submit-intake-form">Submit Registration</button>
+                        </form>
+
+                        <!-- Form Submission Success Overlay -->
+                        <div class="form-success-overlay" id="form-success-overlay" aria-hidden="true">
+                            <div class="success-box">
+                                <div class="success-icon-wrapper">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="success-svg"><polyline points="20 6 9 17 4 12"/></svg>
+                                </div>
+                                <h3>Registration Received!</h3>
+                                <p>Thank you for registering your interest with KSPN. Your designated Account Manager will reach out via email to gather structural requirements within 48 hours.</p>
+                                <button type="button" class="btn btn-secondary" id="close-success-btn">Back to Form</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SUPPORT US VIEW ================= -->
+        <section id="support" class="view-section" aria-labelledby="support-title">
+            <div class="section-container support-page-container">
+                <div class="section-header-center">
+                    <span class="section-tagline">Funding & Sponsorship</span>
+                    <h2 id="support-title">Help Us Build the Pearland Student Ecosystem</h2>
+                    <p class="section-desc">KSPN relies on seed funding and sponsors to cover operational costs, print student resumes, fund high school club chapters, and organize local career workshops.</p>
+                </div>
+
+                <!-- GoFundMe Banner Component -->
+                <div class="gofundme-banner glass-card">
+                    <div class="gofundme-details">
+                        <div class="badge-gfm">Official Seed Fundraiser</div>
+                        <h3>KSPN General Seed Campaign</h3>
+                        <p>All contributions directly fund regional club expansions, website hosting, printing costs for informational folders distributed to businesses, and local high school development materials.</p>
+                        <a href="https://www.gofundme.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large gofundme-btn" id="gofundme-link-btn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="gfm-btn-icon"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                            Donate on GoFundMe
+                        </a>
+                    </div>
+                    <div class="gofundme-qr-wrapper">
+                        <div class="qr-box glass-card">
+                            <!-- Clean SVG mockup of a QR code with logo indicator -->
+                            <svg class="qr-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="100" height="100" fill="#ffffff" rx="10"/>
+                                <!-- QR Corners -->
+                                <rect x="8" y="8" width="24" height="24" fill="#080c14" />
+                                <rect x="12" y="12" width="16" height="16" fill="#ffffff" />
+                                <rect x="15" y="15" width="10" height="10" fill="#080c14" />
+
+                                <rect x="68" y="8" width="24" height="24" fill="#080c14" />
+                                <rect x="72" y="12" width="16" height="16" fill="#ffffff" />
+                                <rect x="75" y="15" width="10" height="10" fill="#080c14" />
+
+                                <rect x="8" y="68" width="24" height="24" fill="#080c14" />
+                                <rect x="12" y="72" width="16" height="16" fill="#ffffff" />
+                                <rect x="15" y="75" width="10" height="10" fill="#080c14" />
+
+                                <!-- Mock Matrix Points -->
+                                <path d="M40,8h4v4h-4V8z M48,8h8v4h-8V8z M60,8h4v4h-4V8z M40,16h4v8h-4V16z M48,16h8v4h-8V16z M60,20h4v4h-4V20z" fill="#080c14"/>
+                                <path d="M8,40h4v4H8V40z M16,40h8v4h-8V40z M8,48h8v8H8V48z M20,48h4v4h-4V48z M12,60h12v4H12V60z" fill="#080c14"/>
+                                <path d="M36,36h12v12H36V36z" fill="#10b981" /> <!-- green center indicator -->
+                                <path d="M40,40h4v4h-4V40z" fill="#ffffff" />
+                                <path d="M68,40h12v4H68V40z M72,48h8v4h-8V48z M80,56h12v8H80V56z M68,60h4v4h-4V60z M88,48h4v4h-4V48z" fill="#080c14"/>
+                                <path d="M40,68h8v4h-8V68z M52,68h8v8h-8V68z M40,76h4v16h-4V76z M48,80h16v4H48V80z M60,88h12v4H60V88z M48,88h4v4h-4V88z" fill="#080c14"/>
+                                <path d="M68,88h24v4H68V88z M72,80h8v4h-8V80z M88,72h4v8h-4V72z M80,88h4v4h-4V88z" fill="#080c14"/>
+                            </svg>
+                            <span class="qr-caption">Scan to Donate</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sponsorship Tiers Section -->
+                <div class="sponsorship-tiers-wrapper">
+                    <h3 class="tiers-title">Premium Sponsorship Tiers</h3>
+                    <p class="tiers-subtitle">Partner with KSPN to elevate your local brand authority while supporting high school professional growth.</p>
+                    
+                    <div class="grid-four-col tiers-grid">
+                        <!-- Bronze Tier -->
+                        <div class="glass-card tier-card">
+                            <div class="tier-badge bronze">Bronze</div>
+                            <div class="tier-price">$100</div>
+                            <ul class="tier-perks">
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="#00f2fe" stroke-width="2" class="perk-check"><polyline points="20 6 9 17 4 12"/></svg>
+                                    Digital validation badge for your site
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="#00f2fe" stroke-width="2" class="perk-check"><polyline points="20 6 9 17 4 12"/></svg>
+                                    Social media sponsor shoutout
+                                </li>
+                            </ul>
+                            <a href="#hire" class="btn btn-secondary btn-full-width margin-top-auto">Choose Bronze</a>
+                        </div>
+
+                        <!-- Silver Tier -->
+                        <div class="glass-card tier-card">
+                            <div class="tier-badge silver">Silver</div>
+                            <div class="tier-price">$150</div>
+                            <ul class="tier-perks">
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="#00f2fe" stroke-width="2" class="perk-check"><polyline points="20 6 9 17 4 12"/></svg>
+                                    <strong>Wooden or Acrylic Plaque</strong>
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="#00f2fe" stroke-width="2" class="perk-check"><polyline points="20 6 9 17 4 12"/></svg>
+                                    Digital validation badge for your site
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="#00f2fe" stroke-width="2" class="perk-check"><polyline points="20 6 9 17 4 12"/></svg>
+                                    Social media sponsor shoutout
+                                </li>
+                            </ul>
+                            <a href="#hire" class="btn btn-secondary btn-full-width margin-top-auto">Choose Silver</a>
+                        </div>
+
+                        <!-- Gold Tier -->
+                        <div class="glass-card tier-card featured">
+                            <div class="featured-ribbon">Most Popular</div>
+                            <div class="tier-badge gold">Gold</div>
+                            <div class="tier-price">$250</div>
+                            <ul class="tier-perks">
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" class="perk-check"><polyline points="20 6 9 17 4 12"/></svg>
+                                    <strong>Priority Candidate Resume Access</strong>
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" class="perk-check"><polyline points="20 6 9 17 4 12"/></svg>
+                                    <strong>KSPN Homepage Logo Placement</strong>
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" class="perk-check"><polyline points="20 6 9 17 4 12"/></svg>
+                                    Premium Wooden/Acrylic Plaque
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" class="perk-check"><polyline points="20 6 9 17 4 12"/></svg>
+                                    Digital badge & social shoutouts
+                                </li>
+                            </ul>
+                            <a href="#hire" class="btn btn-primary btn-full-width margin-top-auto">Choose Gold</a>
+                        </div>
+
+                        <!-- Platinum Tier -->
+                        <div class="glass-card tier-card">
+                            <div class="tier-badge platinum">Platinum</div>
+                            <div class="tier-price">$500</div>
+                            <ul class="tier-perks">
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="#00f2fe" stroke-width="2" class="perk-check"><polyline points="20 6 9 17 4 12"/></svg>
+                                    <strong>Logo placement on club t-shirts</strong>
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="#00f2fe" stroke-width="2" class="perk-check"><polyline points="20 6 9 17 4 12"/></svg>
+                                    <strong>Seat on Industry Advisory Board</strong>
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="#00f2fe" stroke-width="2" class="perk-check"><polyline points="20 6 9 17 4 12"/></svg>
+                                    <strong>Exclusive naming rights to club event</strong>
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="#00f2fe" stroke-width="2" class="perk-check"><polyline points="20 6 9 17 4 12"/></svg>
+                                    All Gold, Silver, & Bronze perks
+                                </li>
+                            </ul>
+                            <a href="#hire" class="btn btn-secondary btn-full-width margin-top-auto">Choose Platinum</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= ABOUT US VIEW ================= -->
+        <section id="about" class="view-section" aria-labelledby="about-title">
+            <div class="section-container about-page-container">
+                <div class="section-header-center">
+                    <span class="section-tagline">Our Leadership</span>
+                    <h2 id="about-title">The People Behind the Network</h2>
+                    <p class="section-desc">KSPN is built on trust, responsibility, and strong organizational infrastructure. Meet the local high school leaders coordinating our Pearland initiatives.</p>
+                </div>
+
+                <!-- Executive Director Bio -->
+                <div class="executive-bio-box glass-card">
+                    <div class="exec-avatar-wrapper">
+                        <!-- Custom vector silhouette or avatar symbolizing Eagle Scout & Executive Director -->
+                        <svg class="exec-avatar-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="avatar-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#0b131f" />
+                                    <stop offset="100%" stop-color="#111827" />
+                                </linearGradient>
+                            </defs>
+                            <circle cx="50" cy="50" r="48" fill="url(#avatar-grad)" stroke="url(#logo-grad)" stroke-width="3" />
+                            <!-- Eagle Scout-style emblem indicator -->
+                            <polygon points="50,15 54,26 66,26 56,33 60,45 50,37 40,45 44,33 34,26 46,26" fill="#00f2fe" opacity="0.3"/>
+                            <!-- Stylized shoulders and tie -->
+                            <path d="M20,90 Q50,60 80,90 Z" fill="#1e293b" />
+                            <path d="M50,65 L44,80 L50,90 L56,80 Z" fill="#00f2fe" />
+                            <!-- Head silhouette -->
+                            <circle cx="50" cy="48" r="16" fill="#e2e8f0" />
+                        </svg>
+                        <div class="eagle-badge">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="badge-svg"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        </div>
+                    </div>
+                    <div class="exec-details">
+                        <div class="exec-tag">Founder & Executive Director</div>
+                        <h3>Kavin Singh</h3>
+                        <p class="exec-credentials">Eagle Scout | Dawson High School Student</p>
+                        <p class="exec-description">As an Eagle Scout, Kavin founded the KS Professional Network (KSPN) on the pillars of trustworthiness, helpfulness, and community service. Drawing on the leadership methodologies mastered during his Scout journey and his active involvement in Pearland high school activities, Kavin serves as Executive Director. He directly oversees our organizational growth, leads our summer B2B sprint, and coordinates partnerships to bridge the gap between driven students and local Pearland businesses.</p>
+                    </div>
+                </div>
+
+                <!-- Headquarters Team Grid -->
+                <div class="hq-team-wrapper">
+                    <h3 class="hq-title">Core Headquarters Team</h3>
+                    <p class="hq-subtitle">The directors managing day-to-day operations, student outreach, and placement logistics.</p>
+
+                    <div class="grid-three-col hq-grid">
+                        <!-- Member 1 -->
+                        <div class="glass-card hq-card">
+                            <div class="hq-avatar-initials text-green">N</div>
+                            <h4>Neev</h4>
+                            <p class="hq-role">Director of Student Development</p>
+                            <p class="hq-bio">Coordinates student recruitment and prescreening. Neev leads the Dawson High School Career Club chapter, ensuring student candidates align with business expectations.</p>
+                        </div>
+
+                        <!-- Member 2 -->
+                        <div class="glass-card hq-card">
+                            <div class="hq-avatar-initials text-teal">S</div>
+                            <h4>Sahil</h4>
+                            <p class="hq-role">Director of Business Relations</p>
+                            <p class="hq-bio">Manages client onboarding and consultation. Sahil serves as the primary Account Manager for our registered local Pearland businesses, structuring specific project formats.</p>
+                        </div>
+
+                        <!-- Member 3 -->
+                        <div class="glass-card hq-card">
+                            <div class="hq-avatar-initials text-blue">V</div>
+                            <h4>Veeksha</h4>
+                            <p class="hq-role">Director of Operations</p>
+                            <p class="hq-bio">Oversees compliance, logistics, and data infrastructure. Veeksha maintains our student resume database and tracks feedback check-ins post-placement.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= STUDENT HUB VIEW ================= -->
+        <section id="students" class="view-section" aria-labelledby="students-title">
+            <div class="section-container students-page-container">
+                <div class="section-header-center">
+                    <span class="section-tagline">For Candidates</span>
+                    <h2 id="students-title">The KSPN High School Career Pipeline</h2>
+                    <p class="section-desc">We train and deploy top-tier talent from Pearland's leading high schools, preparing students to add immediate value on day one.</p>
+                </div>
+
+                <!-- School Chapters Grid -->
+                <div class="grid-two-col school-grid">
+                    <!-- Dawson -->
+                    <div class="glass-card school-card">
+                        <div class="school-logo-mock">
+                            <!-- Dawson High School mascot theme mock SVG -->
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="school-svg">
+                                <circle cx="50" cy="50" r="45" fill="#990000" />
+                                <text x="50" y="60" text-anchor="middle" fill="#ffffff" font-size="32" font-family="'Outfit', sans-serif" font-weight="900">D</text>
+                            </svg>
+                        </div>
+                        <h3>Dawson Career Club</h3>
+                        <p class="school-lead">Serving Dawson High School students.</p>
+                        <p>Focuses on mock interviews, resume preparation, digital portfolio development, and professional networking. Members are selected through a vetting process to guarantee readiness.</p>
+                    </div>
+
+                    <!-- Shadow Creek -->
+                    <div class="glass-card school-card">
+                        <div class="school-logo-mock">
+                            <!-- Shadow Creek High School mascot theme mock SVG -->
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="school-svg">
+                                <circle cx="50" cy="50" r="45" fill="#000044" />
+                                <text x="50" y="60" text-anchor="middle" fill="#00f2fe" font-size="32" font-family="'Outfit', sans-serif" font-weight="900">SC</text>
+                            </svg>
+                        </div>
+                        <h3>Shadow Creek Career Club</h3>
+                        <p class="school-lead">Serving Shadow Creek High School students.</p>
+                        <p>Prepares students in digital marketing, coding fundamentals, customer management, and operations. Organizes regular workshops to connect students with commercial skills.</p>
+                    </div>
+                </div>
+
+                <!-- Coming Soon Subscription Banner -->
+                <div class="coming-soon-banner glass-card">
+                    <div class="coming-soon-content">
+                        <span class="coming-soon-badge">Coming Fall 2026</span>
+                        <h3>Student Placement Applications Open Soon</h3>
+                        <p>Are you a Dawson or Shadow Creek student looking to build your resume and gain real-world experience? Our student intake begins when the school year starts. Sign up with your email below to be notified the moment applications open.</p>
+                        
+                        <form id="student-alert-form" class="newsletter-form" novalidate>
+                            <div class="newsletter-input-group">
+                                <label for="student-email" class="visually-hidden">Student Email Address</label>
+                                <input type="email" id="student-email" placeholder="Enter school email address" required>
+                                <button type="submit" class="btn btn-primary" id="btn-student-submit">Notify Me</button>
+                            </div>
+                            <span class="error-msg" id="error-student-email">Please enter a valid school email</span>
+                        </form>
+
+                        <!-- Alert Success Box -->
+                        <div class="alert-success-msg" id="alert-success-msg" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" class="alert-success-icon"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Perfect! We have added you to our notification list. Look out for updates this August.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-branding">
+                <div class="logo-link">
+                    <div class="logo-icon-wrapper size-small">
+                        <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="40" stroke="#00f2fe" stroke-width="8" fill="none" opacity="0.15"/>
+                            <path d="M30,50 L45,65 L70,35" stroke="#10b981" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                        </svg>
+                    </div>
+                    <span class="logo-text">KS<span class="accent-text">PN</span></span>
+                </div>
+                <p class="footer-moto">Bridging student talent and local businesses. A zero-cost Pearland community career initiative.</p>
+            </div>
+            
+            <div class="footer-links-group">
+                <h4>Navigation</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#hire">Hire Talent</a></li>
+                    <li><a href="#support">Support Us</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#students">Student Hub</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact-group">
+                <h4>Connect With KSPN</h4>
+                <p>Have questions? Reach out to Kavin Singh and the headquarters team directly:</p>
+                <a href="mailto:info@ksprofessionalnetwork.org" class="footer-email">info@ksprofessionalnetwork.org</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 KS Professional Network. All rights reserved. Pearland, Texas. Developed for KSPN B2B summer sprint.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>
