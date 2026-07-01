@@ -30,14 +30,14 @@
                     <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                         <defs>
                             <linearGradient id="logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" stop-color="#00f2fe" />
-                                <stop offset="100%" stop-color="#10b981" />
+                                <stop offset="0%" stop-color="var(--primary)" />
+                                <stop offset="100%" stop-color="var(--secondary)" />
                             </linearGradient>
                         </defs>
                         <circle cx="50" cy="50" r="40" stroke="url(#logo-grad)" stroke-width="8" fill="none" opacity="0.15"/>
                         <path d="M30,50 L45,65 L70,35" stroke="url(#logo-grad)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-                        <circle cx="30" cy="50" r="5" fill="#00f2fe" />
-                        <circle cx="70" cy="35" r="5" fill="#10b981" />
+                        <circle cx="30" cy="50" r="5" fill="var(--primary)" />
+                        <circle cx="70" cy="35" r="5" fill="var(--secondary)" />
                     </svg>
                 </div>
                 <span class="logo-text">KS<span class="accent-text">PN</span></span>
@@ -102,56 +102,56 @@
                         <svg class="network-svg" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
                             <defs>
                                 <radialGradient id="widget-glow" cx="50%" cy="50%" r="50%">
-                                    <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.2"/>
-                                    <stop offset="100%" stop-color="#080c14" stop-opacity="0"/>
+                                    <stop offset="0%" stop-color="var(--primary)" stop-opacity="0.2"/>
+                                    <stop offset="100%" stop-color="var(--bg-dark)" stop-opacity="0"/>
                                 </radialGradient>
                             </defs>
                             <circle cx="200" cy="200" r="160" fill="url(#widget-glow)" />
                             
                             <!-- Orbiting Rings -->
-                            <circle cx="200" cy="200" r="120" stroke="rgba(0, 242, 254, 0.15)" stroke-width="2" fill="none" stroke-dasharray="10 5" class="orbit-1"/>
-                            <circle cx="200" cy="200" r="80" stroke="rgba(16, 185, 129, 0.15)" stroke-width="2" fill="none" stroke-dasharray="5 5" class="orbit-2"/>
+                            <circle cx="200" cy="200" r="120" stroke="var(--border-color-hover)" stroke-width="2" fill="none" stroke-dasharray="10 5" class="orbit-1"/>
+                            <circle cx="200" cy="200" r="80" stroke="rgba(var(--secondary-rgb), 0.15)" stroke-width="2" fill="none" stroke-dasharray="5 5" class="orbit-2"/>
                             
                             <!-- Connected Nodes -->
-                            <line x1="120" y1="120" x2="200" y2="80" stroke="rgba(255,255,255,0.15)" stroke-width="2" />
-                            <line x1="200" y1="80" x2="280" y2="120" stroke="rgba(255,255,255,0.15)" stroke-width="2" />
-                            <line x1="280" y1="120" x2="280" y2="280" stroke="rgba(255,255,255,0.15)" stroke-width="2" />
-                            <line x1="280" y1="280" x2="200" y2="320" stroke="rgba(255,255,255,0.15)" stroke-width="2" />
-                            <line x1="200" y1="320" x2="120" y2="280" stroke="rgba(255,255,255,0.15)" stroke-width="2" />
-                            <line x1="120" y1="280" x2="120" y2="120" stroke="rgba(255,255,255,0.15)" stroke-width="2" />
-                            <line x1="200" y1="80" x2="200" y2="320" stroke="rgba(255,255,255,0.1)" stroke-width="1" />
-                            <line x1="120" y1="200" x2="280" y2="200" stroke="rgba(255,255,255,0.1)" stroke-width="1" />
+                            <line x1="120" y1="120" x2="200" y2="80" stroke="var(--text-muted)" stroke-width="2" opacity="0.15" />
+                            <line x1="200" y1="80" x2="280" y2="120" stroke="var(--text-muted)" stroke-width="2" opacity="0.15" />
+                            <line x1="280" y1="120" x2="280" y2="280" stroke="var(--text-muted)" stroke-width="2" opacity="0.15" />
+                            <line x1="280" y1="280" x2="200" y2="320" stroke="var(--text-muted)" stroke-width="2" opacity="0.15" />
+                            <line x1="200" y1="320" x2="120" y2="280" stroke="var(--text-muted)" stroke-width="2" opacity="0.15" />
+                            <line x1="120" y1="280" x2="120" y2="120" stroke="var(--text-muted)" stroke-width="2" opacity="0.15" />
+                            <line x1="200" y1="80" x2="200" y2="320" stroke="var(--text-muted)" stroke-width="1" opacity="0.1" />
+                            <line x1="120" y1="200" x2="280" y2="200" stroke="var(--text-muted)" stroke-width="1" opacity="0.1" />
 
                             <!-- Main Node Icons -->
                             <g class="node node-1">
-                                <circle cx="200" cy="80" r="16" fill="#080c14" stroke="#00f2fe" stroke-width="3" />
-                                <text x="200" y="85" text-anchor="middle" fill="#00f2fe" font-size="12" font-family="'Outfit', sans-serif" font-weight="bold">B2B</text>
+                                <circle cx="200" cy="80" r="16" fill="var(--bg-card)" stroke="var(--primary)" stroke-width="3" />
+                                <text x="200" y="85" text-anchor="middle" fill="var(--primary)" font-size="12" font-family="'Outfit', sans-serif" font-weight="bold">B2B</text>
                             </g>
                             <g class="node node-2">
-                                <circle cx="280" cy="120" r="12" fill="#080c14" stroke="#10b981" stroke-width="2" />
-                                <circle cx="280" cy="120" r="4" fill="#10b981" />
+                                <circle cx="280" cy="120" r="12" fill="var(--bg-card)" stroke="var(--secondary)" stroke-width="2" />
+                                <circle cx="280" cy="120" r="4" fill="var(--secondary)" />
                             </g>
                             <g class="node node-3">
-                                <circle cx="280" cy="280" r="16" fill="#080c14" stroke="#00f2fe" stroke-width="3" />
-                                <text x="280" y="285" text-anchor="middle" fill="#00f2fe" font-size="12" font-family="'Outfit', sans-serif" font-weight="bold">KS</text>
+                                <circle cx="280" cy="280" r="16" fill="var(--bg-card)" stroke="var(--primary)" stroke-width="3" />
+                                <text x="280" y="285" text-anchor="middle" fill="var(--primary)" font-size="12" font-family="'Outfit', sans-serif" font-weight="bold">KS</text>
                             </g>
                             <g class="node node-4">
-                                <circle cx="200" cy="320" r="12" fill="#080c14" stroke="#10b981" stroke-width="2" />
-                                <circle cx="200" cy="320" r="4" fill="#10b981" />
+                                <circle cx="200" cy="320" r="12" fill="var(--bg-card)" stroke="var(--secondary)" stroke-width="2" />
+                                <circle cx="200" cy="320" r="4" fill="var(--secondary)" />
                             </g>
                             <g class="node node-5">
-                                <circle cx="120" cy="280" r="16" fill="#080c14" stroke="#00f2fe" stroke-width="3" />
-                                <text x="120" y="285" text-anchor="middle" fill="#00f2fe" font-size="11" font-family="'Outfit', sans-serif" font-weight="bold">TAL</text>
+                                <circle cx="120" cy="280" r="16" fill="var(--bg-card)" stroke="var(--primary)" stroke-width="3" />
+                                <text x="120" y="285" text-anchor="middle" fill="var(--primary)" font-size="11" font-family="'Outfit', sans-serif" font-weight="bold">TAL</text>
                             </g>
                             <g class="node node-6">
-                                <circle cx="120" cy="120" r="12" fill="#080c14" stroke="#10b981" stroke-width="2" />
-                                <circle cx="120" cy="120" r="4" fill="#10b981" />
+                                <circle cx="120" cy="120" r="12" fill="var(--bg-card)" stroke="var(--secondary)" stroke-width="2" />
+                                <circle cx="120" cy="120" r="4" fill="var(--secondary)" />
                             </g>
                             
                             <!-- Center Central Hub -->
-                            <circle cx="200" cy="200" r="28" fill="#080c14" stroke="url(#logo-grad)" stroke-width="4" class="pulse-ring-slow" />
-                            <circle cx="200" cy="200" r="22" fill="rgba(0,242,254,0.1)" />
-                            <path d="M192,205 L198,211 L209,195" stroke="#00f2fe" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                            <circle cx="200" cy="200" r="28" fill="var(--bg-card)" stroke="url(#logo-grad)" stroke-width="4" class="pulse-ring-slow" />
+                            <circle cx="200" cy="200" r="22" fill="rgba(217,58,36,0.1)" />
+                            <path d="M192,205 L198,211 L209,195" stroke="var(--primary)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
                         </svg>
                     </div>
                 </div>
@@ -438,21 +438,21 @@
                             <svg class="qr-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                                 <rect width="100" height="100" fill="#ffffff" rx="10"/>
                                 <!-- QR Corners -->
-                                <rect x="8" y="8" width="24" height="24" fill="#080c14" />
+                                <rect x="8" y="8" width="24" height="24" fill="var(--text-main)" />
                                 <rect x="12" y="12" width="16" height="16" fill="#ffffff" />
-                                <rect x="15" y="15" width="10" height="10" fill="#080c14" />
+                                <rect x="15" y="15" width="10" height="10" fill="var(--text-main)" />
 
-                                <rect x="68" y="8" width="24" height="24" fill="#080c14" />
+                                <rect x="68" y="8" width="24" height="24" fill="var(--text-main)" />
                                 <rect x="72" y="12" width="16" height="16" fill="#ffffff" />
-                                <rect x="75" y="15" width="10" height="10" fill="#080c14" />
+                                <rect x="75" y="15" width="10" height="10" fill="var(--text-main)" />
 
-                                <rect x="8" y="68" width="24" height="24" fill="#080c14" />
+                                <rect x="8" y="68" width="24" height="24" fill="var(--text-main)" />
                                 <rect x="12" y="72" width="16" height="16" fill="#ffffff" />
-                                <rect x="15" y="75" width="10" height="10" fill="#080c14" />
+                                <rect x="15" y="75" width="10" height="10" fill="var(--text-main)" />
 
                                 <!-- Mock Matrix Points -->
-                                <path d="M40,8h4v4h-4V8z M48,8h8v4h-8V8z M60,8h4v4h-4V8z M40,16h4v8h-4V16z M48,16h8v4h-8V16z M60,20h4v4h-4V20z" fill="#080c14"/>
-                                <path d="M8,40h4v4H8V40z M16,40h8v4h-8V40z M8,48h8v8H8V48z M20,48h4v4h-4V48z M12,60h12v4H12V60z" fill="#080c14"/>
+                                <path d="M40,8h4v4h-4V8z M48,8h8v4h-8V8z M60,8h4v4h-4V8z M40,16h4v8h-4V16z M48,16h8v4h-8V16z M60,20h4v4h-4V20z" fill="var(--text-main)"/>
+                                <path d="M8,40h4v4H8V40z M16,40h8v4h-8V40z M8,48h8v8H8V48z M20,48h4v4h-4V48z M12,60h12v4H12V60z" fill="var(--text-main)"/>
                                 <path d="M36,36h12v12H36V36z" fill="#10b981" /> <!-- green center indicator -->
                                 <path d="M40,40h4v4h-4V40z" fill="#ffffff" />
                                 <path d="M68,40h12v4H68V40z M72,48h8v4h-8V48z M80,56h12v8H80V56z M68,60h4v4h-4V60z M88,48h4v4h-4V48z" fill="#080c14"/>

@@ -11,6 +11,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelectorAll('.nav-link');
     const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
     const header = document.getElementById('main-header');
+    
+    // Mobile Navigation Drawer elements
+    const mobileToggle = document.getElementById('mobile-nav-toggle');
+    const mobileDrawer = document.getElementById('mobile-nav-drawer');
 
     function handleRouting() {
         // Get hash from URL, default to '#home'
@@ -73,8 +77,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // ----------------------------------------------------
     // 2. Mobile Navigation Toggle Drawer
     // ----------------------------------------------------
-    const mobileToggle = document.getElementById('mobile-nav-toggle');
-    const mobileDrawer = document.getElementById('mobile-nav-drawer');
 
     function toggleMobileMenu() {
         const isExpanded = mobileToggle.getAttribute('aria-expanded') === 'true';
