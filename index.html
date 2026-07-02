@@ -82,7 +82,7 @@
             <!-- Hero Banner -->
             <div class="hero-container">
                 <div class="hero-content">
-                    <div class="badge-accent">Summer 2026 B2B Sprint</div>
+                    <div class="badge-accent">2027 Cohort in Progress</div>
                     <h1 id="home-hero-title" class="hero-title">Bridging Driven Student Talent and Local Pearland
                         Businesses</h1>
                     <p class="hero-subtitle">KSPN acts as a zero-cost vetting intermediary. We connect local companies
@@ -102,74 +102,126 @@
                                     <stop offset="0%" stop-color="var(--primary)" stop-opacity="0.2" />
                                     <stop offset="100%" stop-color="var(--bg-dark)" stop-opacity="0" />
                                 </radialGradient>
+                                <linearGradient id="logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="var(--primary)" />
+                                    <stop offset="100%" stop-color="var(--secondary)" />
+                                </linearGradient>
                             </defs>
                             <circle cx="200" cy="200" r="160" fill="url(#widget-glow)" />
 
                             <!-- Orbiting Rings -->
-                            <circle cx="200" cy="200" r="120" stroke="var(--border-color-hover)" stroke-width="2"
+                            <circle cx="200" cy="200" r="160" stroke="var(--border-color-hover)" stroke-width="2"
                                 fill="none" stroke-dasharray="10 5" class="orbit-1" />
-                            <circle cx="200" cy="200" r="80" stroke="rgba(var(--secondary-rgb), 0.15)" stroke-width="2"
+                            <circle cx="200" cy="200" r="120" stroke="rgba(var(--secondary-rgb), 0.15)" stroke-width="2"
                                 fill="none" stroke-dasharray="5 5" class="orbit-2" />
 
-                            <!-- Connected Nodes -->
-                            <line x1="120" y1="120" x2="200" y2="80" stroke="var(--text-muted)" stroke-width="2"
+                            <!-- Connected Lines -->
+                            <line x1="80" y1="120" x2="200" y2="200" stroke="var(--text-muted)" stroke-width="2"
                                 opacity="0.15" />
-                            <line x1="200" y1="80" x2="280" y2="120" stroke="var(--text-muted)" stroke-width="2"
+                            <line x1="60" y1="200" x2="200" y2="200" stroke="var(--text-muted)" stroke-width="2"
                                 opacity="0.15" />
-                            <line x1="280" y1="120" x2="280" y2="280" stroke="var(--text-muted)" stroke-width="2"
+                            <line x1="80" y1="280" x2="200" y2="200" stroke="var(--text-muted)" stroke-width="2"
                                 opacity="0.15" />
-                            <line x1="280" y1="280" x2="200" y2="320" stroke="var(--text-muted)" stroke-width="2"
+
+                            <line x1="320" y1="120" x2="200" y2="200" stroke="var(--text-muted)" stroke-width="2"
                                 opacity="0.15" />
-                            <line x1="200" y1="320" x2="120" y2="280" stroke="var(--text-muted)" stroke-width="2"
+                            <line x1="340" y1="200" x2="200" y2="200" stroke="var(--text-muted)" stroke-width="2"
                                 opacity="0.15" />
-                            <line x1="120" y1="280" x2="120" y2="120" stroke="var(--text-muted)" stroke-width="2"
+                            <line x1="320" y1="280" x2="200" y2="200" stroke="var(--text-muted)" stroke-width="2"
                                 opacity="0.15" />
-                            <line x1="200" y1="80" x2="200" y2="320" stroke="var(--text-muted)" stroke-width="1"
+
+                            <line x1="80" y1="120" x2="60" y2="200" stroke="var(--text-muted)" stroke-width="1"
                                 opacity="0.1" />
-                            <line x1="120" y1="200" x2="280" y2="200" stroke="var(--text-muted)" stroke-width="1"
+                            <line x1="60" y1="200" x2="80" y2="280" stroke="var(--text-muted)" stroke-width="1"
                                 opacity="0.1" />
 
-                            <!-- Main Node Icons -->
-                            <g class="node node-1">
-                                <circle cx="200" cy="80" r="16" fill="var(--bg-card)" stroke="var(--primary)"
-                                    stroke-width="3" />
-                                <text x="200" y="85" text-anchor="middle" fill="var(--primary)" font-size="12"
-                                    font-family="'Outfit', sans-serif" font-weight="bold">B2B</text>
-                            </g>
-                            <g class="node node-2">
-                                <circle cx="280" cy="120" r="12" fill="var(--bg-card)" stroke="var(--secondary)"
+                            <line x1="320" y1="120" x2="340" y2="200" stroke="var(--text-muted)" stroke-width="1"
+                                opacity="0.1" />
+                            <line x1="340" y1="200" x2="320" y2="280" stroke="var(--text-muted)" stroke-width="1"
+                                opacity="0.1" />
+
+                            <!-- Multiple Business Nodes (Left Side) -->
+                            <!-- Biz 1 -->
+                            <g class="node">
+                                <circle cx="80" cy="120" r="22" fill="var(--bg-card)" stroke="var(--primary)"
                                     stroke-width="2" />
-                                <circle cx="280" cy="120" r="4" fill="var(--secondary)" />
+                                <svg x="70" y="110" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                    stroke="var(--primary)" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                                </svg>
                             </g>
-                            <g class="node node-3">
-                                <circle cx="280" cy="280" r="16" fill="var(--bg-card)" stroke="var(--primary)"
-                                    stroke-width="3" />
-                                <text x="280" y="285" text-anchor="middle" fill="var(--primary)" font-size="12"
-                                    font-family="'Outfit', sans-serif" font-weight="bold">KS</text>
+                            <!-- Biz 2 -->
+                            <g class="node">
+                                <circle cx="60" cy="200" r="26" fill="var(--bg-card)" stroke="var(--primary)"
+                                    stroke-width="2.5" />
+                                <svg x="48" y="188" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    stroke="var(--primary)" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                                </svg>
+                                <text x="60" y="242" text-anchor="middle" fill="var(--text-main)" font-size="12"
+                                    font-family="'Outfit', sans-serif" font-weight="bold">BUSINESSES</text>
                             </g>
-                            <g class="node node-4">
-                                <circle cx="200" cy="320" r="12" fill="var(--bg-card)" stroke="var(--secondary)"
+                            <!-- Biz 3 -->
+                            <g class="node">
+                                <circle cx="80" cy="280" r="22" fill="var(--bg-card)" stroke="var(--primary)"
                                     stroke-width="2" />
-                                <circle cx="200" cy="320" r="4" fill="var(--secondary)" />
-                            </g>
-                            <g class="node node-5">
-                                <circle cx="120" cy="280" r="16" fill="var(--bg-card)" stroke="var(--primary)"
-                                    stroke-width="3" />
-                                <text x="120" y="285" text-anchor="middle" fill="var(--primary)" font-size="11"
-                                    font-family="'Outfit', sans-serif" font-weight="bold">TAL</text>
-                            </g>
-                            <g class="node node-6">
-                                <circle cx="120" cy="120" r="12" fill="var(--bg-card)" stroke="var(--secondary)"
-                                    stroke-width="2" />
-                                <circle cx="120" cy="120" r="4" fill="var(--secondary)" />
+                                <svg x="70" y="270" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                    stroke="var(--primary)" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                                </svg>
                             </g>
 
-                            <!-- Center Central Hub -->
-                            <circle cx="200" cy="200" r="28" fill="var(--bg-card)" stroke="url(#logo-grad)"
-                                stroke-width="4" class="pulse-ring-slow" />
-                            <circle cx="200" cy="200" r="22" fill="rgba(217,58,36,0.1)" />
-                            <path d="M192,205 L198,211 L209,195" stroke="var(--primary)" stroke-width="3"
-                                stroke-linecap="round" stroke-linejoin="round" fill="none" />
+                            <!-- Multiple Student Nodes (Right Side) -->
+                            <!-- Student 1 -->
+                            <g class="node">
+                                <circle cx="320" cy="120" r="22" fill="var(--bg-card)" stroke="var(--secondary)"
+                                    stroke-width="2" />
+                                <svg x="310" y="110" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                    stroke="var(--secondary)" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                                    <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                                </svg>
+                            </g>
+                            <!-- Student 2 -->
+                            <g class="node">
+                                <circle cx="340" cy="200" r="26" fill="var(--bg-card)" stroke="var(--secondary)"
+                                    stroke-width="2.5" />
+                                <svg x="328" y="188" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    stroke="var(--secondary)" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                                    <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                                </svg>
+                                <text x="340" y="242" text-anchor="middle" fill="var(--text-main)" font-size="12"
+                                    font-family="'Outfit', sans-serif" font-weight="bold">STUDENTS</text>
+                            </g>
+                            <!-- Student 3 -->
+                            <g class="node">
+                                <circle cx="320" cy="280" r="22" fill="var(--bg-card)" stroke="var(--secondary)"
+                                    stroke-width="2" />
+                                <svg x="310" y="270" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                    stroke="var(--secondary)" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                                    <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                                </svg>
+                            </g>
+
+                            <!-- Center Central Hub (KSPN) -->
+                            <g class="node node-kspn">
+                                <circle cx="200" cy="200" r="52" fill="var(--bg-card)" stroke="url(#logo-grad)"
+                                    stroke-width="4" class="pulse-ring-slow" />
+                                <circle cx="200" cy="200" r="44" fill="rgba(217,58,36,0.1)" />
+                                <text x="200" y="208" text-anchor="middle" fill="var(--primary)" font-size="24"
+                                    font-family="'Outfit', sans-serif" font-weight="bold">KSPN</text>
+                            </g>
                         </svg>
                     </div>
                 </div>
@@ -185,7 +237,7 @@
                         students receive real-world work opportunities.</p>
                 </div>
 
-                <div class="grid-three-col value-cards-grid">
+                <div class="grid-two-col value-cards-grid">
                     <div class="glass-card value-card">
                         <div class="card-icon-wrapper color-teal">
                             <!-- Shield Trust Icon -->
@@ -196,7 +248,7 @@
                         </div>
                         <h3>Rigorous Student Vetting</h3>
                         <p>We do not just pass along resumes. Our internal Student Development team pre-screens and
-                            interviews all applicants, matching only the top 10% of driven high school candidates with
+                            interviews all applicants, matching only the top high school candidates with
                             your business.</p>
                     </div>
                     <div class="glass-card value-card">
@@ -213,18 +265,7 @@
                             consultation services are 100% free for Pearland businesses. No hidden fees or placements
                             cuts.</p>
                     </div>
-                    <div class="glass-card value-card">
-                        <div class="card-icon-wrapper color-blue">
-                            <!-- Shield/Minimal Effort Icon -->
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" class="card-icon">
-                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
-                            </svg>
-                        </div>
-                        <h3>Frictionless Management</h3>
-                        <p>A dedicated KSPN Account Manager stays aligned with your team. We check in regularly, provide
-                            feedback loops, and handle all student support issues to protect your valuable time.</p>
-                    </div>
+
                 </div>
             </div>
 
@@ -240,6 +281,31 @@
                 <!-- Vertical/Horizontal Stepper -->
                 <div class="stepper-wrapper">
                     <div class="stepper-track" aria-hidden="true"></div>
+
+                    <!-- Step 0 -->
+                    <div class="step-item">
+                        <div class="step-badge">0</div>
+                        <div class="step-content glass-card">
+                            <div class="step-icon-wrapper">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="step-icon">
+                                    <rect x="4" y="2" width="16" height="20" rx="2" ry="2" />
+                                    <path d="M9 22v-4h6v4" />
+                                    <path d="M8 6h.01" />
+                                    <path d="M16 6h.01" />
+                                    <path d="M12 6h.01" />
+                                    <path d="M12 10h.01" />
+                                    <path d="M12 14h.01" />
+                                    <path d="M16 10h.01" />
+                                    <path d="M16 14h.01" />
+                                    <path d="M8 10h.01" />
+                                    <path d="M8 14h.01" />
+                                </svg>
+                            </div>
+                            <h3>In-Person Scouting</h3>
+                            <p>Our student leadership teams proactively approach scouted businesses in person to establish connections, pitch the initiative, and secure potential internship opportunities.</p>
+                        </div>
+                    </div>
 
                     <!-- Step 1 -->
                     <div class="step-item">
