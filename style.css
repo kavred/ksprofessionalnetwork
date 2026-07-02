@@ -404,9 +404,7 @@ a {
     right: -100vw;
     width: 80vw;
     height: 100vh;
-    background: rgba(8, 12, 20, 0.98);
-    backdrop-filter: blur(2.5vh);
-    -webkit-backdrop-filter: blur(2.5vh);
+    background: #F2F2F2;
     border-left: var(--border-width) solid var(--border-color);
     z-index: 999;
     padding: 15vh 8vw var(--spacing-lg) 8vw;
@@ -427,8 +425,8 @@ a {
 .mobile-nav-link {
     font-family: var(--font-title);
     font-size: var(--font-md);
-    font-weight: 600;
-    color: var(--text-muted);
+    font-weight: 400;
+    color: var(--text-light);
     display: block;
 }
 
