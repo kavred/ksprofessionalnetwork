@@ -110,11 +110,9 @@ document.addEventListener('DOMContentLoaded', () => {
     function handleHeaderScroll() {
         if (window.scrollY > window.innerHeight * 0.05) {
             header.style.padding = '0.5vh 0';
-            header.style.background = 'rgba(8, 12, 20, 0.9)';
-            header.style.boxShadow = '0vw 0.5vw 2vw rgba(0,0,0,0.5)';
+            header.style.boxShadow = '0vw 0.5vw 2vw rgba(0,0,0,0.05)';
         } else {
             header.style.padding = '0';
-            header.style.background = 'rgba(8, 12, 20, 0.75)';
             header.style.boxShadow = 'none';
         }
     }
@@ -307,25 +305,22 @@ document.addEventListener('DOMContentLoaded', () => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 // Add class to reveal with transition
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
+                entry.target.classList.add('visible');
                 // Stop observing once animated
                 animationObserver.unobserve(entry.target);
             }
         });
     }, {
         threshold: 0.15,
-        rootMargin: '0vh 0vw -5vh 0vw' // animate slightly before fully entering
+        rootMargin: '0px 0px -10% 0px' // animate slightly before fully entering
     });
 
     // Select elements to reveal on scroll
-    const animatedElements = document.querySelectorAll('.value-card, .step-content, .format-card, .tier-card, .hq-card, .school-card');
+    const animatedElements = document.querySelectorAll('.value-card, .step-content, .format-card, .tier-card, .hq-card, .school-card, .section-header-center, .section-desc');
     
     // Set initial transparent/translated states and start observing
     animatedElements.forEach(el => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(3vh)';
-        el.style.transition = 'opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1)';
+        el.classList.add('scroll-reveal');
         animationObserver.observe(el);
     });
 });
