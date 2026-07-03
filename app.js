@@ -74,6 +74,18 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('hashchange', handleRouting);
     handleRouting(); // run once on start
 
+    // Ensure subsequent clicks on active nav links scroll to top instead of the anchor offset
+    document.querySelectorAll('.nav-link, .mobile-nav-link, .logo-link').forEach(link => {
+        link.addEventListener('click', (e) => {
+            const href = link.getAttribute('href');
+            const currentHash = window.location.hash || '#home';
+            if (href === currentHash) {
+                e.preventDefault();
+                window.scrollTo(0, 0);
+            }
+        });
+    });
+
     // ----------------------------------------------------
     // 2. Mobile Navigation Toggle Drawer
     // ----------------------------------------------------
