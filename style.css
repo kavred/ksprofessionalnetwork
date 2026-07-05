@@ -1140,7 +1140,7 @@ a {
 
 /* GoFundMe Campaign Box */
 .gfm-embed-wrapper {
-    max-width: 50vw;
+    max-width: 30vw;
     margin: 0 auto var(--spacing-lg) auto;
     display: flex;
     justify-content: center;
@@ -1150,7 +1150,7 @@ a {
 
 @media (max-width: 992px) {
     .gfm-embed-wrapper {
-        max-width: 90vw;
+        max-width: 80vw;
     }
 }
 
