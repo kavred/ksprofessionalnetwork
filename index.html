@@ -507,63 +507,7 @@
                 </div>
 
                 <!-- GoFundMe Banner Component -->
-                <div class="gofundme-banner glass-card">
-                    <div class="gofundme-details">
-                        <div class="badge-gfm">Official Seed Fundraiser</div>
-                        <h3>KSPN General Seed Campaign</h3>
-                        <p>All contributions directly fund regional club expansions, website hosting, printing costs for
-                            informational folders distributed to businesses, and local high school development
-                            materials.</p>
-                        <a href="https://www.gofundme.com" target="_blank" rel="noopener noreferrer"
-                            class="btn btn-primary btn-large gofundme-btn" id="gofundme-link-btn">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" class="gfm-btn-icon">
-                                <path
-                                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
-                            </svg>
-                            Donate on GoFundMe
-                        </a>
-                    </div>
-                    <div class="gofundme-qr-wrapper">
-                        <div class="qr-box glass-card">
-                            <!-- Clean SVG mockup of a QR code with logo indicator -->
-                            <svg class="qr-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="100" height="100" fill="#ffffff" rx="10" />
-                                <!-- QR Corners -->
-                                <rect x="8" y="8" width="24" height="24" fill="var(--text-main)" />
-                                <rect x="12" y="12" width="16" height="16" fill="#ffffff" />
-                                <rect x="15" y="15" width="10" height="10" fill="var(--text-main)" />
-
-                                <rect x="68" y="8" width="24" height="24" fill="var(--text-main)" />
-                                <rect x="72" y="12" width="16" height="16" fill="#ffffff" />
-                                <rect x="75" y="15" width="10" height="10" fill="var(--text-main)" />
-
-                                <rect x="8" y="68" width="24" height="24" fill="var(--text-main)" />
-                                <rect x="12" y="72" width="16" height="16" fill="#ffffff" />
-                                <rect x="15" y="75" width="10" height="10" fill="var(--text-main)" />
-
-                                <!-- Mock Matrix Points -->
-                                <path
-                                    d="M40,8h4v4h-4V8z M48,8h8v4h-8V8z M60,8h4v4h-4V8z M40,16h4v8h-4V16z M48,16h8v4h-8V16z M60,20h4v4h-4V20z"
-                                    fill="var(--text-main)" />
-                                <path
-                                    d="M8,40h4v4H8V40z M16,40h8v4h-8V40z M8,48h8v8H8V48z M20,48h4v4h-4V48z M12,60h12v4H12V60z"
-                                    fill="var(--text-main)" />
-                                <path d="M36,36h12v12H36V36z" fill="#10b981" /> <!-- green center indicator -->
-                                <path d="M40,40h4v4h-4V40z" fill="#ffffff" />
-                                <path
-                                    d="M68,40h12v4H68V40z M72,48h8v4h-8V48z M80,56h12v8H80V56z M68,60h4v4h-4V60z M88,48h4v4h-4V48z"
-                                    fill="#080c14" />
-                                <path
-                                    d="M40,68h8v4h-8V68z M52,68h8v8h-8V68z M40,76h4v16h-4V76z M48,80h16v4H48V80z M60,88h12v4H60V88z M48,88h4v4h-4V88z"
-                                    fill="#080c14" />
-                                <path d="M68,88h24v4H68V88z M72,80h8v4h-8V80z M88,72h4v8h-4V72z M80,88h4v4h-4V88z"
-                                    fill="#080c14" />
-                            </svg>
-                            <span class="qr-caption">Scan to Donate</span>
-                        </div>
-                    </div>
-                </div>
+                <script defer src="https://www.gofundme.com/static/js/embed.js"></script>
 
                 <!-- Sponsorship Tiers Section -->
                 <div class="sponsorship-tiers-wrapper">
@@ -575,7 +519,7 @@
                         <!-- Bronze Tier -->
                         <div class="glass-card tier-card">
                             <div class="tier-badge bronze">Bronze</div>
-                            <div class="tier-price">$100</div>
+                            <div class="tier-price">$200</div>
                             <ul class="tier-perks">
                                 <li>
                                     <svg viewBox="0 0 24 24" fill="none" stroke="#00f2fe" stroke-width="2"
@@ -598,7 +542,7 @@
                         <!-- Silver Tier -->
                         <div class="glass-card tier-card">
                             <div class="tier-badge silver">Silver</div>
-                            <div class="tier-price">$150</div>
+                            <div class="tier-price">$300</div>
                             <ul class="tier-perks">
                                 <li>
                                     <svg viewBox="0 0 24 24" fill="none" stroke="#00f2fe" stroke-width="2"
@@ -629,7 +573,7 @@
                         <div class="glass-card tier-card featured">
                             <div class="featured-ribbon">Most Popular</div>
                             <div class="tier-badge gold">Gold</div>
-                            <div class="tier-price">$250</div>
+                            <div class="tier-price">$500</div>
                             <ul class="tier-perks">
                                 <li>
                                     <svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"
@@ -666,7 +610,7 @@
                         <!-- Platinum Tier -->
                         <div class="glass-card tier-card">
                             <div class="tier-badge platinum">Platinum</div>
-                            <div class="tier-price">$500</div>
+                            <div class="tier-price">$1000</div>
                             <ul class="tier-perks">
                                 <li>
                                     <svg viewBox="0 0 24 24" fill="none" stroke="#00f2fe" stroke-width="2"
