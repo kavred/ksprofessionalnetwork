@@ -306,7 +306,7 @@ a {
     font-size: var(--font-md);
     font-weight: 600;
     letter-spacing: 0.1vw;
-    color: var(--text-light);
+    color: var(--primary);
 }
 
 .accent-text {
