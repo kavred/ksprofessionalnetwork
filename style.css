@@ -1806,6 +1806,36 @@ a {
     border-color: var(--secondary);
 }
 
+.footer-social-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5vw;
+    font-family: var(--font-title);
+    font-size: var(--font-xs);
+    font-weight: 600;
+    color: var(--text-main);
+    background: rgba(43, 37, 35, 0.04);
+    border: var(--border-width) solid var(--border-color);
+    padding: 0.9vh 1vw;
+    border-radius: var(--border-radius-sm);
+    margin-top: 0.8vh;
+    transition: all var(--transition-speed) ease;
+    text-decoration: none;
+}
+
+.footer-social-link:hover {
+    color: #0A66C2;
+    border-color: rgba(10, 102, 194, 0.4);
+    background: rgba(10, 102, 194, 0.08);
+    transform: translateY(-2px);
+}
+
+.social-icon {
+    width: 2vh;
+    height: 2vh;
+    flex-shrink: 0;
+}
+
 .footer-bottom {
     border-top: var(--border-width) solid rgba(255, 255, 255, 0.04);
     padding-top: var(--spacing-sm);
