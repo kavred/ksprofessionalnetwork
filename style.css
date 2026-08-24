@@ -129,43 +129,12 @@ body {
     mix-blend-mode: multiply;
 }
 
-.bg-glow-1 {
-    top: -20vh;
-    left: -10vw;
-    width: 60vw;
-    height: 60vw;
-    background: radial-gradient(circle, var(--primary) 0%, rgba(0, 0, 0, 0) 70%);
-}
-
-.bg-glow-2 {
-    bottom: -10vh;
-    right: -10vw;
-    width: 50vw;
-    height: 50vw;
-    background: radial-gradient(circle, var(--secondary) 0%, rgba(0, 0, 0, 0) 70%);
-}
-
-.bg-glow-3 {
-    top: 30vh;
-    left: 40vw;
-    width: 40vw;
-    height: 40vw;
-    background: radial-gradient(circle, var(--accent-blue) 0%, rgba(0, 0, 0, 0) 70%);
-    opacity: 0.15;
+.bg-glow-1, .bg-glow-2, .bg-glow-3 {
+    display: none;
 }
 
 .grid-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-image: 
-        linear-gradient(rgba(43, 37, 35, 0.03) var(--border-width), transparent var(--border-width)),
-        linear-gradient(90deg, rgba(43, 37, 35, 0.03) var(--border-width), transparent var(--border-width));
-    background-size: 5vw 5vw;
-    pointer-events: none;
-    z-index: -1;
+    display: none;
 }
 
 /* Typography elements */
@@ -203,7 +172,7 @@ a {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, var(--primary) 0%, #F56B52 100%);
+    background: var(--primary);
     color: var(--bg-card);
     box-shadow: 0vw 0.4vw 1.5vw rgba(217, 58, 36, 0.25);
 }
@@ -211,7 +180,7 @@ a {
 .btn-primary:hover {
     transform: translateY(-0.3vh);
     box-shadow: 0vw 0.8vw 2.5vw rgba(217, 58, 36, 0.4);
-    background: linear-gradient(135deg, #FF8A73 0%, var(--primary) 100%);
+    background: #b82b24;
 }
 
 .btn-secondary {
@@ -310,9 +279,7 @@ a {
 }
 
 .accent-text {
-    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--primary);
 }
 
 .desktop-nav {
@@ -345,7 +312,7 @@ a {
     left: 0;
     width: 100%;
     height: var(--border-width-thick);
-    background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+    background: var(--primary);
     transform: scaleX(0);
     transform-origin: right;
     transition: transform var(--transition-speed) ease;
@@ -437,8 +404,8 @@ a {
 .mobile-nav-cta {
     margin-top: 4vh;
     padding: 2vh var(--spacing-sm);
-    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
-    color: var(--bg-dark);
+    background: var(--primary);
+    color: #FFFFFF;
     text-align: center;
     border-radius: var(--border-radius-sm);
 }
@@ -506,9 +473,7 @@ a {
     font-size: var(--font-xs);
     text-transform: uppercase;
     letter-spacing: 0.15vw;
-    background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--primary);
     margin-bottom: var(--spacing-xs);
 }
 
@@ -773,7 +738,7 @@ a {
     bottom: 5vh;
     left: 2.25vw;
     width: var(--border-width-thick);
-    background: linear-gradient(to bottom, var(--primary) 0%, var(--secondary) 100%);
+    background: var(--primary);
     opacity: 0.2;
 }
 
@@ -879,7 +844,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(245, 241, 232, 0.95) 100%);
+    background: var(--bg-card);
     border-color: rgba(217, 58, 36, 0.2);
     padding: var(--spacing-md) var(--spacing-lg);
     gap: 4vw;
@@ -1194,13 +1159,13 @@ a {
 }
 
 .gofundme-btn {
-    background: linear-gradient(135deg, var(--secondary) 0%, #059669 100%);
+    background: var(--secondary);
     box-shadow: 0vw 0.4vw 1.5vw rgba(16, 185, 129, 0.25);
     gap: 0.8vw;
 }
 
 .gofundme-btn:hover {
-    background: linear-gradient(135deg, #34d399 0%, var(--secondary) 100%);
+    background: #0d635c;
     box-shadow: 0vw 0.8vw 2.5vw rgba(16, 185, 129, 0.4);
 }
 
@@ -1353,7 +1318,7 @@ a {
     font-weight: 700;
     font-size: 1.2vh;
     text-transform: uppercase;
-    background: linear-gradient(135deg, var(--secondary) 0%, #059669 100%);
+    background: var(--secondary);
     color: var(--bg-dark);
     padding: 0.6vh 1.2vw;
     border-radius: var(--border-radius-sm);
@@ -1574,7 +1539,7 @@ a {
 
 /* Coming Soon Newsletter alert banner styles */
 .coming-soon-banner {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(245, 241, 232, 0.95) 100%);
+    background: var(--bg-card);
     border-color: rgba(217, 58, 36, 0.25);
     padding: var(--spacing-md) var(--spacing-md);
     text-align: center;
