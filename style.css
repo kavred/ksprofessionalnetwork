@@ -1876,3 +1876,46 @@ a {
     opacity: 1;
     transform: translateY(0);
 }
+
+/* Responsive Embedded Google Forms (Eliminates Vertical Scrollbars across all screens) */
+.gform-iframe {
+    width: 100%;
+    border: none;
+    overflow: hidden;
+    display: block;
+}
+
+.gform-business {
+    height: 1350px;
+}
+
+.gform-student {
+    height: 750px;
+}
+
+@media (max-width: 992px) {
+    .gform-business {
+        height: 1480px;
+    }
+    .gform-student {
+        height: 850px;
+    }
+}
+
+@media (max-width: 768px) {
+    .gform-business {
+        height: 1700px;
+    }
+    .gform-student {
+        height: 950px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gform-business {
+        height: 1850px;
+    }
+    .gform-student {
+        height: 1050px;
+    }
+}
