@@ -1884,3 +1884,61 @@ a {
         height: 1050px;
     }
 }
+
+/* ==========================================================================
+   FOOTER PRIVACY COMMITMENT BOX STYLING (Viewport Relative Units)
+   ========================================================================== */
+.footer-privacy-box {
+    margin-top: 2.5vh;
+    padding: 2vh 1.6vw;
+    background: rgba(43, 37, 35, 0.04);
+    border: var(--border-width) solid var(--border-color);
+    border-radius: var(--border-radius-sm);
+    scroll-margin-top: 15vh;
+}
+
+.footer-privacy-heading {
+    font-family: var(--font-title);
+    font-size: var(--font-xs);
+    font-weight: 700;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 0.05vw;
+    margin-bottom: 0.8vh;
+}
+
+.footer-privacy-text {
+    font-size: var(--font-xs);
+    line-height: 1.65;
+    color: var(--text-muted);
+}
+
+.footer-privacy-text a {
+    color: var(--primary);
+    text-decoration: underline;
+    font-weight: 600;
+    transition: color var(--transition-speed) ease;
+}
+
+.footer-privacy-text a:hover {
+    color: var(--secondary);
+}
+
+.footer-bottom-link {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: underline;
+    transition: color var(--transition-speed) ease;
+}
+
+.footer-bottom-link:hover {
+    color: #FFFFFF;
+}
+
+@media (max-width: 768px) {
+    .footer-privacy-box {
+        margin-top: 2vh;
+        padding: 2vh 3.5vw;
+    }
+}
+
+

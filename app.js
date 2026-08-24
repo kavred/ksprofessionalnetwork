@@ -23,6 +23,21 @@ document.addEventListener('DOMContentLoaded', () => {
         // Safety check for empty hash
         if (hash === '#') hash = '#home';
 
+        // Check if hash targets footer privacy box
+        if (hash === '#footer-privacy') {
+            closeMobileMenu();
+            const privacyElem = document.getElementById('footer-privacy');
+            if (privacyElem) {
+                const hasActiveSection = Array.from(sections).some(s => s.classList.contains('active'));
+                if (!hasActiveSection) {
+                    const homeSection = document.getElementById('home');
+                    if (homeSection) homeSection.classList.add('active');
+                }
+                privacyElem.scrollIntoView({ behavior: 'smooth' });
+            }
+            return;
+        }
+
         // Check if the hash matches a valid section
         const targetSection = document.querySelector(hash);
         if (!targetSection) {
@@ -75,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
     handleRouting(); // run once on start
 
     // Ensure subsequent clicks on active nav links scroll to top instead of the anchor offset
-    document.querySelectorAll('.nav-link, .mobile-nav-link, .logo-link').forEach(link => {
+    document.querySelectorAll('.nav-link, .mobile-nav-link, .logo-link, .footer-links a, .footer-bottom-link').forEach(link => {
         link.addEventListener('click', (e) => {
             const href = link.getAttribute('href');
             const currentHash = window.location.hash || '#home';
